@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Angie</title>
+    <link rel="icon" href="heart.png">
+  </head>
+  <body style="background-color: #FFFFFF;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <img src="anuelaa.png" alt="Imagen de Anuel AA" style="width: 800px; height: 1500px; position: relative; left: 185px; top: 30px;">
+      <img src="pushhere.png" alt="Push Here" style="width: 350px; height: 350px; position: relative; left: -380px; top: 80px;">
+      
+      <audio id="audio" src="music.mp3"></audio>
+      
+      <script>
+        var audio = document.getElementById("audio");
+        var pushHere = document.querySelector("img[src='pushhere.png']");
+
+        pushHere.addEventListener("click", function() {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>
